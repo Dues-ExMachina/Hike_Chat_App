@@ -10,11 +10,20 @@ const server = http.createServer(app)
 
 
 //Create a SocketIO server and pass the express server init
+// const io = new Server(server, {
+//     cors: {
+//         origin: ["http://localhost:5173"]
+//     }
+// })
+
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:5173"]
+        origin: [
+            "http://localhost:5173", //  for local development
+            "https://hike-chat-app-git-main-dues-exmachinas-projects.vercel.app" // for Vercel URL here
+        ]
     }
-})
+});
 
 
 //this is a helper function that will return the socket id when we pass userid

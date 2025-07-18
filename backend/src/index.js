@@ -12,7 +12,14 @@ dotenv.config();
 
 const PORT = process.env.PORT
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }))
+//app.use(cors({ origin: "http://localhost:5173", credentials: true }))   https://hike-chat-app-git-main-dues-exmachinas-projects.vercel.app/
+app.use(cors({ 
+    origin: [
+        "http://localhost:5173", //  for local development
+        "https://your-vercel-app-url.vercel.app" // for  Vercel URL here
+    ], 
+    credentials: true 
+}));
 //this will help you to extract the data out of body
 app.use(express.json())
 

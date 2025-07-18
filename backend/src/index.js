@@ -16,7 +16,7 @@ const PORT = process.env.PORT
 app.use(cors({ 
     origin: [
         "http://localhost:5173", //  for local development
-        "https://your-vercel-app-url.vercel.app" // for  Vercel URL here
+        "https://hike-chat-app-git-main-dues-exmachinas-projects.vercel.app" // for  Vercel URL here
     ], 
     credentials: true 
 }));

@@ -9,7 +9,7 @@ import { io } from "socket.io-client";
 
 const BASE_URL = import.meta.env.MODE === "development" 
     ? "http://localhost:5001" 
-    : "https://hikechatapp-production.up.railway.app";
+    : "https://hike-chat-app-9jml.onrender.com";
 
 export const useAuthStore = create((set, get) => ({
     //initially we dont know if user is authenticated so null

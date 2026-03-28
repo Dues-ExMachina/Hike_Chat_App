@@ -20,7 +20,8 @@ const io = new Server(server, {
     cors: {
         origin: [
             "http://localhost:5173", //  for local development
-            "https://hike-chat-app-git-main-dues-exmachinas-projects.vercel.app" // for Vercel URL here
+            "https://hike-chat-app.vercel.app", // production Vercel URL
+            "https://hike-chat-app-git-main-dues-exmachinas-projects.vercel.app" // preview Vercel URL
         ]
     }
 });

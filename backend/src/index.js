@@ -21,7 +21,7 @@ app.use(cors({
     credentials: true 
 }));
 //this will help you to extract the data out of body
-app.use(express.json())
+app.use(express.json({ limit: "15mb" }))
 
 app.use(cookieParser())
 
